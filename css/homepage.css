@@ -52,6 +52,11 @@ html {
     font-size: 3.25rem;
 }
 
+.sidebar p {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
 .sidebar-about img {
     display: initial;
 }
@@ -86,4 +91,13 @@ html {
         margin-left: 22rem;
         margin-right: 4rem;
     }
+}
+
+/* Misc */
+.sidebar hr {
+    position: relative;
+    margin: .5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
 }

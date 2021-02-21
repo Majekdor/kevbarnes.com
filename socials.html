@@ -22,30 +22,46 @@
         <p>This is my personal homepage that serves as a hub for all of my projects, domains, etc.</p>
       </div>
     </div>
-  <div class="container sidebar-sticky footer">
-    <p><a href="index.html">Home</a></p>
-    <p>&copy; 2020-21 <a href="https://github.com/majekdor/majekdor.github.io">Majek</a>
-      & <a href="https://github.com/poole/hyde">Hyde</a></p>
-  </div>
+    <div class="container sidebar-sticky footer">
+      <p>Site pages</p>
+      <hr>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="https://majek.dev" target="_blank">Development</a></p>
+      <p id="cp">&copy; 2020-21 <a href="https://github.com/majekdor/majekdor.github.io" target="_blank">Majek</a>
+        & <a href="https://github.com/poole/hyde" target="_blank">Hyde</a></p>
+      <script>
+        var name = "Unknown OS";
+        if (navigator.userAgent.indexOf("Win") != -1)
+          Name = "Windows";
+        if (navigator.userAgent.indexOf("Mac") != -1)
+          Name = "MacOS";
+        if (navigator.userAgent.indexOf("Linux") != -1)
+          Name = "Linux";
+        if (navigator.userAgent.indexOf("Android") != -1)
+          Name = "Android OS";
+        if (navigator.userAgent.indexOf("like Mac") != -1)
+          Name = "iOS";
+        if (name === "iOS" && name === "Android OS") {
+          document.getElementById("cp").innerHTML = ""
+        }
+      </script>
+    </div>
 </div>
 
 <div class="content container">
   <div class="page">
     <h1>Find me on social media!</h1>
     <hr>
-    <a href="https://twitter.com/Kev_Barnes13" target="_blank">
-      <div class="box-twitter">
+    <div class="button button-twitter">
+      <a href="https://twitter.com/Kev_Barnes13" target="_blank">
         <img src="img/twitter.png" alt="Twitter">
-        <p>I post most often on Twitter. Here you'll find everything from UNC Basketball to mountain biking to my random thoughts.</p>
-      </div>
-    </a>
-    <hr>
-    <a href="https://instagram.com/kev.barnes" target="_blank">
-      <div class="box-instagram">
+      </a>
+    </div>
+    <div class="button button-instagram">
+      <a href="https://instagram.com/kev.barnes" target="_blank">
         <img src="img/instagram.png" alt="Instagram">
-        <p>I post less on Instagram but when I do it's usually pretty cool :) You should follow me.</p>
-      </div>
-    </a>
+      </a>
+    </div>
 
   </div>
 </div>

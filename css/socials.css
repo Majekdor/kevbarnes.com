@@ -1,49 +1,14 @@
-.content img {
-  size: 4vw;
-  max-width: 9rem;
-  display: inline;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+.button img {
+  padding: 5px;
+  width: 150px;
+  margin-right: 20px;
+  height: auto;
+  transform: scale(1);
+  transition: transform .25s;
   float: left;
-  vertical-align: middle;
 }
 
-.content p {
-  font-size: 1rem;
-  vertical-align: middle;
-  float: right;
-  max-width: 25rem;
-  padding-top: 0.3rem;
-  padding-right: 0.8rem;
-  color: #515151;
-}
-
-.box-twitter {
-  background-color: #87Ceeb;
-  float: left;
-  vertical-align: middle;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  max-height: 10rem;
-  size: 40vw;
-  margin: 1rem;
-}
-
-.box-instagram {
-  background-color: #ff9c82;
-  float: left;
-  vertical-align: middle;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  max-height: 10rem;
-  size: 40vw;
-  margin: 1rem;
+.button:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
